@@ -1,7 +1,7 @@
 # protocol-handler Well-Known Resource Identifier
 
-URI suffix: protocol-handler
-Change controller: Fedi-To https://fedi-to.net/
+URI suffix: protocol-handler  
+Change controller: Fedi-To https://fedi-to.net/  
 Specification document(s): https://github.com/fedi-to/fedi-to.github.io/protocol-handler.md
 
 ## Purpose
