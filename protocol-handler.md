@@ -25,7 +25,10 @@ redirect, javascript, or some other means.
 
 ## Security Considerations
 
-None known. The `protocol-handler` endpoint is a simple navigable web resource
-with a query parameter, comparable to any other.
-
-
+The `protocol-handler` endpoint is a simple navigable web resource with a query
+parameter, comparable to any other. However, care should be taken not to
+implement it as an open redirect - if the protocol handler at example.org is
+passed an URL with an example.net authority, it SHOULD NOT redirect to
+example.net, but instead to an app in example.org that fetches the target URL
+and provides the relevant content, with the appropriate security measures as
+required by the app.
