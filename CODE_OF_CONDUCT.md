@@ -8,3 +8,7 @@ it would be a disservice to the community to not acknowledge that.
 - It is not acceptable to sexualize folks without explicit, enthusiastic
     consent.
 - It is not acceptable to publicly sexualize folks in community spaces.
+- It is not acceptable to promote or support, directly and/or indirectly,
+    surveillance and/or related technologies, including ML/AI, facial
+    recognition, tracking cookies, fingerprinting, profiling, among others,
+    regardless of consent.
