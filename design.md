@@ -42,6 +42,10 @@ fn is_scheme_invalid(scheme: &str) -> bool {
 }
 
 /// Attempts to find a fallback protocol handler for the given target URL.
+///
+/// The target is assumed to be normalized, as per the WHATWG URL spec. (Note
+/// that Fedi-To doesn't actually check that it is, but that's a Fedi-To
+/// issue.)
 fn get_fallback(target: &str) -> Result<String, FallbackError> {
     use FallbackError::*;
     // find the scheme
