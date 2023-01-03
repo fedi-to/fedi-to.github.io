@@ -7,7 +7,7 @@ Fedi-To specifications and open source collaboration space.
 The following documents are available in this repo:
 
 - [Design Docs](/design.md)
-- [The Well-Known protocol-handler Resource Identifier](/protocol-handler.md)
+- [The protocol-handler Well-Known Resource Identifier](/protocol-handler.md)
 
 ## Contributing
 
