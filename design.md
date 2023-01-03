@@ -20,6 +20,8 @@ need for any web requests. Using the Rust `url` crate, version `2.3.1`, the
 fallback protocol handler is computed like so:
 
 ```rust
+use percent_encoding::utf8_percent_encode;
+
 /// Error kind returned when trying to find the fallback protocol handler.
 enum FallbackError {
     /// Returned when the given URL, while valid, does not provide a fallback
@@ -58,7 +60,7 @@ fn get_fallback(target: &str) -> Result<String, FallbackError> {
     // replace web+scheme with https
     // this allows us to handle web+ URLs with the semantics we actually
     // want, which is roughly the same as https, with a few differences
-    let mut as_if_https = target.clone();
+    let mut as_if_https = target.to_string();
     as_if_https.replace_range(0..4+scheme.len(), "https");
     // the main difference is that unlike https, authority is optional.
     // so, first check that there should be an authority.
