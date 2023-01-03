@@ -30,8 +30,8 @@ URL. For optimal compatibility, it SHOULD return `404 Not Found` for unknown or
 unsupported schemes and it SHOULD return `307 Temporary Redirect` or
 `308 Permanent Redirect` for schemes it can handle.
 
-[component percent-encode set](https://url.spec.whatwg.org/#component-percent-encode-set)
-[HTML #protocol-handler-invocation](https://html.spec.whatwg.org/multipage/system-state.html#protocol-handler-invocation)
+[component percent-encode set]: https://url.spec.whatwg.org/#component-percent-encode-set
+[HTML #protocol-handler-invocation]: https://html.spec.whatwg.org/multipage/system-state.html#protocol-handler-invocation
 
 ## Security Considerations
 
