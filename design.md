@@ -33,3 +33,12 @@ handle the case of manually-crafted URLs since the endpoints are freely
 navigable, so this isn't much of an issue.
 
 [protocol-handler.md]: /protocol-handler.md
+
+## PWA support
+
+PWAs silently hijack your system's protocol handlers by design. Fedi-To
+protects your users by not using their systems' protocol handlers by default.
+
+Fedi-To does have an explicit way to opt into using the system handlers, but it
+can only be done with consent. It will never actively hijack your handlers. let
+alone hide it from you.
