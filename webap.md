@@ -11,11 +11,15 @@ Same as `https`, with the following additional restrictions:
 
 See [RFC9110, Section 4.2.2](https://www.iana.org/go/rfc9110) for `https`.
 
+## Encoding considerations
+
+Same as `https`.
+
 ## Interoperability considerations
 
 Currently, none of the ActivityPub implementations parse `web+ap` URIs. There
 is an open redirector that parses `web+ap` URIs and turns them into the correct
-`https` URI, on a best-effort basis. It works well enough, at least.
+`https` URI, on a best-effort basis.
 
 It is worth noting that browsers parse these using the [WHATWG URL spec],
 especially when used as e.g. a web-based protocol handler.
