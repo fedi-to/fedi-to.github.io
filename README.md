@@ -8,6 +8,8 @@ The following documents are available in this repo:
 
 - [Design Docs](/design.md)
 - [The protocol-handler Well-Known Resource Identifier](/protocol-handler.md)
+- [The Fedi-To API documentation](/api.md)
+- [The (WIP) web+ap scheme](/webap.md)
 
 ## Contributing
 
