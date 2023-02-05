@@ -133,6 +133,8 @@ fn get_fallback(target: &str) -> Result<String, FallbackError> {
     // `href` so this is correct.
     let mut url = url::Url::parse(&*as_if_https).map_err(|_| NoHandler)?;
     url.set_path("/.well-known/protocol-handler");
+    let _ = url.set_username("");
+    let _ = url.set_password(None);
     let mut params = "target=".to_owned();
     params.extend(utf8_percent_encode(&*target, COMPONENT));
     url.set_query(Some(&*params));
