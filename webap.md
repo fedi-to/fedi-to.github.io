@@ -28,10 +28,15 @@ especially when used as e.g. a web-based protocol handler.
 
 ## Functional description
 
-A `web+ap` URI is an `https` URI with additional semantics. Software supporting
-this URI MUST treat it as an `https` URI and then follow the [ActivityPub
-specification], especially when it comes to the exchanged content types (the
-`Accept` and `Content-Type` header).
+A `web+ap` URI is an `https` URI with additional semantics. ActivityPub software
+supporting this URI MUST treat it as an `https` URI and then follow the
+[ActivityPub specification], especially when it comes to the exchanged content
+types (the `Accept` and `Content-Type` header).
+
+It is also encouraged for operating systems to provide a fallback mechanism for
+these URIs. This SHOULD be done in a way that the target website can reject
+non-ActivityPub objects (like invite links). This fallback mechanism SHOULD be
+used when no appropriate ActivityPub software is available.
 
 [ActivityPub specification]: https://www.w3.org/TR/activitypub/
 
