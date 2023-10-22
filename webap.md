@@ -7,7 +7,7 @@ as seen in the [ActivityPub specification].
 
 Same as `https`, with the following additional restrictions:
 
-1. Userinfo is not allowed for this scheme, and if present, MUST be ignored.
+1. Userinfo is reserved for future use, and unless otherwise specified, MUST be ignored.
 
 See [RFC9110, Section 4.2.2](https://www.iana.org/go/rfc9110) for `https`.
 
